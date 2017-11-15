@@ -52,7 +52,7 @@ the best prototype before moving to the next phase of the acquisition process. B
 
 After some initial research, the procurement team ORSA determined the best model to use is one based on the secretary problem. That is the procurement team should:
 
-1. Review an initial set of $k$ proposals out of the $n=50$ total proposals without making a selection. To ensure a fair assessment is given to each proposal, they are shuffled into a random order before the initial evaluation;
+1. Review an initial set of '$k$' proposals out of the $n=50$ total proposals without making a selection. To ensure a fair assessment is given to each proposal, they are shuffled into a random order before the initial evaluation;
 2. Review the remaining $n-k$ proposals and choose the first proposal that is better than the
 previous set of proposals;
 3. If they make it to the last proposal, then by default this will be the selected proposal.
