@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on FA49 Proponent Office Blog</title>
+    <link>/tutorial/</link>
+    <description>Recent content in Tutorial on FA49 Proponent Office Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 FA49 Proponent Office</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tutorial/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Secretary Problem</title>
+      <link>/tutorial/secretary-tutorial/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/tutorial/secretary-tutorial/</guid>
+      <description>
+
+&lt;p&gt;Being an ORSA is not unlike any other job on the command staff. That is, you will get a question to answer, and depending on your experience level and the complexity of the issue, you can sometimes give a quick response, or you may need more time to provide a thorough answer and explanation. The problem that follows in this white paper is an example of the type of problem an ORSA would deal with in their line of work. In particular, this question deals with determining the probability of an event, given specific pieces of information. The approach used to solve this problem is a method based on the &lt;a href=&#34;http://datagenetics.com/blog/december32012/index.html&#34; target=&#34;_blank&#34;&gt;secretary problem&lt;/a&gt;. The example that follows is an excellent problem to show not only an application of probability theory but how to solve a problem from multiple approaches.&lt;/p&gt;
+
+&lt;p&gt;For this problem, the ORSA can derive the solution with a couple of formulas.  While it is quick just to look up a formula and give an answer, it is crucial for ORSAs to understand how to gain an intuition for the mathematics they are using, so that they can translate their intuition into an appropriate analogy for the person who is receiving the final results. To put it another way, an ORSA needs to develop an ability to translate the findings of their analysis into a lexicon understood by the consumers of the report.&lt;/p&gt;
+
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;The US Physical Fitness Center and School (USAPFCS) is researching to select a new Army Physical Fitness Uniform. Based on their request for proposal, the USAPFCS received 50 different uniform designs that meet the requirement, and they will need to choose
+the best prototype before moving to the next phase of the acquisition process. Before deciding on the material solution to develop, the Program Manager for the uniform selection team wants to know the probability of selecting the best submission out of the 50 received since they are working with a limited budget and can only proceed with one material solution to develop.&lt;/p&gt;
+
+&lt;h2 id=&#34;analysis&#34;&gt;Analysis&lt;/h2&gt;
+
+&lt;p&gt;After some initial research, the procurement team ORSA determined the best model to use is one based on the secretary problem. That is the procurement team should:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Review an initial set of $k$ proposals out of the $n=50$ total proposals without making a selection. To ensure a fair assessment is given to each proposal, they are shuffled into a random order before the initial evaluation;&lt;/li&gt;
+&lt;li&gt;Review the remaining $n-k$ proposals and choose the first proposal that is better than the
+previous set of proposals;&lt;/li&gt;
+&lt;li&gt;If they make it to the last proposal, then by default this will be the selected proposal.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;analytical-solution&#34;&gt;Analytical Solution&lt;/h3&gt;
+
+&lt;p&gt;There are two simple formulas to find the optimal selection probability. First, the number of initial candidates to review is approximately equal to $n/e$. In other words, if you take the total number of proposals and divide it by the special constant $e$, then you will get a reasonable initial sample in which to review the remaining proposals. In this example, the initial number of candidates to review is $\left\lfloor50/e\right\rfloor = 18$.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Now to find the probability of selecting the best candidate, all that is left is to use the formula $$-\left(\frac{k}{n}\right)\ln\left(\frac{k}{n}\right)$$&lt;/p&gt;
+
+&lt;p&gt;Using this formula produces the following solution:
+$$
+\begin{aligned}
+\text{selection probability} &amp;amp; = -\left(\frac{k}{n}\right)\ln\left(\frac{k}{n}\right) \\&lt;br /&gt;
+\phantom{\vspace} \\&lt;br /&gt;
+\text{selection probability} &amp;amp; = -\left(\frac{18}{50}\right)\ln\left(\frac{18}{50}\right) \\&lt;br /&gt;
+\phantom{\vspace} \\&lt;br /&gt;
+\text{selection probability} &amp;amp; = 0.3677944
+\end{aligned}
+$$&lt;/p&gt;
+
+&lt;p&gt;Before going back to the procurement team with the answer, the ORSA needs to make sure they can answer the question of why this is the correct answer. One way to do this is to create a plot showing the relationship between the number of initial candidates to evaluate $k$ and the probability of optimal selection. &lt;a href=&#34;#figure1&#34;&gt;Figure 1&lt;/a&gt; below shows this link, and the red dot indicates the maximum probability. Primarily, as the number of proposals in your initial rejection region increases, the chance of selecting the ideal candidate increases as well until you reached a maximum at 18 proposals. After 18 proposals, the probability of choosing the best proposal decreases.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;figure1&#34;&gt;&lt;/a&gt; 
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/secplot.jpg&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Plot showing the optimal selection probability versus the number of initial candidates reviewed.&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The result should make sense because, before 18 proposals, we don&amp;rsquo;t have enough information to determine which bid is indeed the best one. Along the same lines, after 18 proposals, we reviewed more proposals than necessary to decide on the optimal probability. Feeling satisfied with this logic, the ORSA would then present their findings to the procurement team, and life is good. However, there are some occasions when just giving this amount of information is not enough. For example, a procurement team member may want to know more about why 18 is the appropriate number. While they can see the graphic that shows this, their intuition is not sufficient to grasp the presented formulation.&lt;/p&gt;
+
+&lt;p&gt;Now the ORSA could deal with this in various ways. One approach would involve deriving the formula, similar to the process shown by  &lt;a href=&#34;http://datagenetics.com/blog/december32012/index.html&#34; target=&#34;_blank&#34;&gt;Data Genetics&lt;/a&gt;. I would not recommend this method unless you are convening with a bunch of people that have an overwhelming enjoyment of math. To put it another way, most of the consumers of our analysis don&amp;rsquo;t share that type of enthusiasm as we do. Therefore, you will need to find a way to report just enough information to build trust with the results without delving into the abstract details on a subject that your message gets lost.&lt;/p&gt;
+
+&lt;h3 id=&#34;simulate-the-process-to-develop-intuition&#34;&gt;Simulate the process to develop intuition&lt;/h3&gt;
+
+&lt;p&gt;A better approach would involve creating a less complicated example and then gradually increase the complexity in a way that is more intuitive. A simulation, of the selection process, for instance, could guide the intuition of why the formula works. Because the simulation closely resembles the selection process, it will be easier to see how the formula reduces to its final form.&lt;/p&gt;
+
+&lt;h4 id=&#34;a-minimal-example&#34;&gt;A minimal example&lt;/h4&gt;
+
+&lt;p&gt;To understand, how the simulation works, let&amp;rsquo;s examine a simple example. The table below shows the results of reviewing three proposals with a strategy to evaluate and reject the first proposal and select the next proposal that scores higher than the first one. The rows indicate the final rating for each proposal, with a score of one for the worst proposal and three for the best proposal. The boldface numbers are the selected proposals by the selection strategy, and the red highlighted selections were instances of choosing the highest rated proposal.&lt;/p&gt;
+
+&lt;p&gt;In essence, the simulation will create a random sample of scores that has a sample size equal to the total number of bids to evaluate. This example shows three, while the simulation we will use has a sample size of 50. After we create a random, sample, the simulation will enforce the rules of rejecting the initial number of candidates and then selecting the first proposal better than the previously seen proposals. If the simulation reaches the last proposal, then that proposal is chosen by default. After collecting all the winning bids, the simulation will compute the probability of selecting the best candidate by dividing the total number of times the highest proposal was selected divided by the total number of trials simulated. As indicated by the table, this simulation produced an optimal selection probability of $50\%$.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;3&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;caption&gt;&lt;strong&gt;Table 1:&lt;/strong&gt; Example simulation results&lt;/caption&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;simulation-results&#34;&gt;Simulation results&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;#figure2&#34;&gt;Figure 2&lt;/a&gt; displays the results of simulating the selection of candidate proposals, with an initial review sample ranging from 1 to 49 samples, for 100, 1,000, and 100,000 trials respectively. The figure also contains a plot of the analytical solution shown in &lt;a href=&#34;#figure1&#34;&gt;Figure 1&lt;/a&gt;.  Thus, what the figure shows that as the number of trials increase, the simulation results will start to closely mimic the results of the analytic solution. To put this another way, the analytical formula is what the simulation would return with an infinite number of trials. Table 2 shows a summary of this described pattern.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&#34;figure2&#34;&gt;&lt;/a&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;/img/simulation-results.png&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Simulation results for 100 trials.&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Number of trials&lt;/th&gt;
+&lt;th&gt;Number of inital candidates to review&lt;/th&gt;
+&lt;th&gt;Optimal probability&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;100&lt;/td&gt;
+&lt;td&gt;12, 15, 21, 29&lt;/td&gt;
+&lt;td&gt;0.400&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;1,000&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;0.383&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;100,000&lt;/td&gt;
+&lt;td&gt;19&lt;/td&gt;
+&lt;td&gt;0.375&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;$\infty$&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;0.368&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;caption&gt;&lt;strong&gt;Table 2:&lt;/strong&gt; Comparison of simulation results&lt;/caption&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;This white paper demonstrated how to apply a probability model towards selecting the best proposal from a pool of 50 proposals. Using a simple formula solved the problem, but we also learned that besides solving the problem, an ORSA must have a good intuitive sense of what the formula is doing. For an ORSA, that would usually involve diving into the background theory of the formula, but doing that process for a non-technical audience is usually not the best approach. A better approach would be to use a simple simulation, or similar technique, that would show what is happening underneath the hood of the formula. Ultimately, this helps to build trust with the ORSA&amp;rsquo;s analysis.&lt;/p&gt;
+
+&lt;h2 id=&#34;futher-learning&#34;&gt;Futher learning&lt;/h2&gt;
+
+&lt;p&gt;If you want to learn more about the secretary problem in general, then read &lt;a href=&#34;https://www.math.upenn.edu/~ted/210F10/References/Secretary.pdf&#34; target=&#34;_blank&#34;&gt;Thomas Ferguson&amp;rsquo;s&lt;/a&gt; paper on the history of this problem.&lt;/p&gt;
+
+&lt;p&gt;The YouTube video below presents Dr. Ria Symonds and her application of the secretary problem to selecting the best port-o-potty during a music festival.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/ZWib5olGbQ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;The $\left\lfloor \right\rfloor$ symbol represents the floor function, and it means to take the result of the evaluated expression and round to the nearest integer that is less than or equal to the usual result of the evaluated expression. The mathematical constant, $e$, is also referred to as &lt;a href=&#34;http://www.mathsisfun.com/numbers/e-eulers-number.html&#34; target=&#34;_blank&#34;&gt;Euler&amp;rsquo;s number&lt;/a&gt;. 
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

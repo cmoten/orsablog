@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on FA49 Proponent Office Blog</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on FA49 Proponent Office Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 FA49 Proponent Office</copyright>
+    <lastBuildDate>Mon, 13 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Data Science</title>
+      <link>/project/data-science/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/data-science/</guid>
+      <description>&lt;p&gt;As you view the metro-like map of the skills needed for data science, you will quickly notice that this relatively new discipline utilizes just about every tool within an ORSAs toolkit. The goal of the data scientist is the same as any other analyst; helping leaders make better decisions. The challenge, however, of getting the critical pieces of information to support the decision is entirely different.&lt;/p&gt;
+
+&lt;p&gt;To get an idea of the type of challenge facing a data scientist, let&amp;rsquo;s think a little bit about the kinds of problems they are working on for the military. ORSAs within cyber organizations have to deal with cyber-related alerts to the Army network. Imagine all the antivirus, phishing attacks, and other warnings that occur from the millions of laptops, desktops, mobile devices across the Army&amp;rsquo;s network. Without going into the details, just extracting a small sample of that information is not a trivial task, and then to organize the data into a meaningful way to do analysis is another challenge onto itself. These types of tasks focus on approaches to &lt;a href=&#34;https://www.thoughtworks.com/insights/blog/let-data-scientists-be-data-mungers&#34; target=&#34;_blank&#34;&gt;munge&lt;/a&gt; or transform data from its raw unstructured form into something structured for analysis.&lt;/p&gt;
+
+&lt;p&gt;Another challenge facing data scientists involves using various methods of artificial intelligence, such as machine learning, to train computers to do tasks that can augment humans. For example, &lt;a href=&#34;https://medium.com/@ageitgey/machine-learning-is-fun-part-3-deep-learning-and-convolutional-neural-networks-f40359318721&#34; target=&#34;_blank&#34;&gt;image classification&lt;/a&gt; is one of the first applications of machine learning. You can imagine how we could leverage the same types of algorithms to assist imagery analysts in identifying an enemy and friendly systems.&lt;/p&gt;
+
+&lt;p&gt;These two small examples are just a tiny fraction of the myriad of applications for data science. Just like the other techniques of operations research, data scientists will help solve issues spanning across every aspect of the Army enterprise.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Optimization</title>
+      <link>/project/optimization/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/optimization/</guid>
+      <description>&lt;p&gt;When you optimize, the goal is to find the minimum or maximum quantities of a given objective function, subject to specified constraints. For the military, optimization has practical applications for multiple areas including force structure, cost analysis, human resources analysis, equipping, force rotations, logistics planning, infrastructure resilience, military intelligence, and many others. A graduate level program involving optimization usually focuses on three techniques: &lt;a href=&#34;https://brilliant.org/wiki/linear-programming/&#34; target=&#34;_blank&#34;&gt;linear programming&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Integer_programming&#34; target=&#34;_blank&#34;&gt;integer programming&lt;/a&gt;, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Nonlinear_programming&#34; target=&#34;_blank&#34;&gt;nonlinear programming&lt;/a&gt;. From there, you may also learn about one of the most versatile applications of optimization; &lt;a href=&#34;http://neddimitrov.org/teaching/networks-lecture-videos.html&#34; target=&#34;_blank&#34;&gt;network flows and graphs&lt;/a&gt;, and other optimization techniques.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulations</title>
+      <link>/project/simulations/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/simulations/</guid>
+      <description>&lt;p&gt;Learning about simulations is one of the first subjects in which an ORSA moves from theory into application. A simulation is merely a representation of a real-world system or process over time. There are several reasons why you would use a simulation, but a key reason to use simulations is that a reasonable calculation or statistical analysis could not happen otherwise.  In other words, the system we are analyzing is too complicated to narrow its essence into a series of equations. For military ORSAs, our involvement with simulations usually focuses on some variant of a combat model. Since combat between two forces involves multiple factors, there is not a single simulation capable of replicating this type of complexity. Thus, analyses involving simulations incorporate experts from numerous disciplines such as applied mathematicians, computer scientists, physicists, ORSAs, and other military experts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Inference</title>
+      <link>/project/statistical-inference/</link>
+      <pubDate>Sun, 12 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/statistical-inference/</guid>
+      <description>&lt;p&gt;With probability, ORSAs learn how to develop models and make predictions of the relative likelihood of individual events happening within these models. Statistics, on the other hand, takes a given sample of data and tries to predict the model that produced the data to make inferences about general population the sample represents. Kalid Azad, the creator of the Better Explained blog, has a great &lt;a href=&#34;https://betterexplained.com/articles/a-brief-introduction-to-probability-statistics/&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; that provides an excellent analogy describing the relationship between probability and statistics. In short, probability is taking measurements of an animal, and deduce what kind of tracks they would leave. Conversely, a statistician will find a footprint and determine which type of animal produced it.&lt;/p&gt;
+
+&lt;p&gt;For ORSAs, statistics is our Swiss Army Knife. We will collect descriptive statistics of the data to find out parameters such as the mean, standard deviation, and other items to get a sense of the structure of the data and the types of data we can use for further analysis. From there we will explore the data visually and otherwise, and depending on the problem, conduct more prescriptive statistics to develop analytics. In other words, we look through data and glean out the most critical aspects of that data to give insights that were not obvious before the analysis. The tutorials and publications in this section will provide some examples of how we do that. In addition to the mathematics listed in the &lt;a href=&#34;/project/probability-modeling/&#34; target=&#34;_blank&#34;&gt;probability modeling&lt;/a&gt; section, you will also need to learn &lt;a href=&#34;https://www.khanacademy.org/math/linear-algebra&#34; target=&#34;_blank&#34;&gt;linear algebra&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Probability Modeling</title>
+      <link>/project/probability-modeling/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/probability-modeling/</guid>
+      <description>&lt;p&gt;In this section, you can find out what ORSAs learn about probability theory and how we apply that approach towards using probability models in some of our analyses. Most operations research programs start out with a course on probability theory. The image in the header, for example, shows the equation for Baye&amp;rsquo;s theorem, a Markov chain, a decision tree, and a Venn diagram. These are just a small sample of the myriad of probability models available to an ORSA.&lt;/p&gt;
+
+&lt;p&gt;Although colleges teach probability and statistics as one course at the undergraduate level, there is a clear distinction between these two disciplines that an ORSA must understand. For an excellent short explanation of these differences, see this article from &lt;a href=&#34;https://www3.cs.stonybrook.edu/~skiena/jaialai/excerpts/node12.html&#34; target=&#34;_blank&#34;&gt;Stony Brook University&lt;/a&gt;. To gain an intuition for probability theory, you will need to have a good foundation in the mathematics of &lt;a href=&#34;https://artofproblemsolving.com/videos/counting&#34; target=&#34;_blank&#34;&gt;counting&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/playlist?list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz&#34; target=&#34;_blank&#34;&gt;discrete mathematics&lt;/a&gt;, and &lt;a href=&#34;https://www.khanacademy.org/math/calculus-home?t=classes&#34; target=&#34;_blank&#34;&gt;calculus&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
