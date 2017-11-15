@@ -61,3 +61,7 @@ The options you have available to you are:
 1. Submit an exception to policy along with your VTIP packet. Keep in mind your current branch will have a reason on why your year group is closed, and your branch will have quite a bit of influence with regards to final approval.
 
 2. If your year group has passed the VTIP consideration cycle, then you can submit a branch transfer at any time.
+
+## VTIP Considerations
+
+A couple of other considerations you need to know is that if you apply for VTIP in the first quarter (Usually August - September), then you will have a short window to apply for ACS and gain acceptance to a civilian institution of study. The reason for this is that the first quarter VTIP results usually come out in early December and you will have very little time to meet the application deadlines for various graduate schools. The bottom line is plan early and keep this in mind when you apply for VTIP during the first quarter of the fiscal year, especially when scheduling your GRE.  If you apply during the third quarter board (usually February - March), then you have time to get your academic and other requirements in order before the next ACS panel.
