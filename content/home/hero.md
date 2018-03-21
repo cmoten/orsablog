@@ -26,4 +26,4 @@ weight = 3
 
 +++
 
-This site does not contain any official use information. Please visit our <a href = "https://www.milsuite.mil/book/groups/fa49-orsa">milBook</a> group to view or receive any official use documents or updates.
+For general information about FA49, please visit our <a href="http://www.fa49.army.mil/">public website</a>. You are also welcome to visit our <a href = "https://www.milsuite.mil/book/groups/fa49-orsa">milBook</a> group to view or receive any official use documents or updates.

@@ -5,8 +5,8 @@
     
     <url>
     
-      <loc>/post/branch-in-out-calls-for-vtip/</loc>
-      <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+      <loc>/post/2018-03-21-preparing-for-orsa-mac-or-graduate-school/</loc>
+      <lastmod>2018-03-21T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -14,8 +14,8 @@
     
     <url>
     
-      <loc>/talk/mors-emerging-techniques-forum/</loc>
-      <lastmod>2017-11-19T21:30:00-05:00</lastmod>
+      <loc>/post/branch-in-out-calls-for-vtip/</loc>
+      <lastmod>2018-01-25T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -141,6 +141,16 @@
     
     <url>
     
+      <loc>/tags/acs/</loc>
+      <lastmod>2018-03-21T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/categories/</loc>
       <priority>0</priority>
     </url>
@@ -170,6 +180,16 @@
     
     <url>
     
+      <loc>/tags/orsa-mac/</loc>
+      <lastmod>2018-03-21T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/optimization/</loc>
       <lastmod>2017-11-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -181,7 +201,7 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2018-01-25T00:00:00+00:00</lastmod>
+      <lastmod>2018-03-21T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
