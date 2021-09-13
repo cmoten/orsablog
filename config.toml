@@ -265,9 +265,3 @@ defaultContentLanguageInSubdir = false
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-us"
-  
-#Redirect
-[[redirects]]
-  from = "/"
-  to = "https://fa49-2021.web.app/"
-  force = true
