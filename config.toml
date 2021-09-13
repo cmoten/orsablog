@@ -1,4 +1,4 @@
-baseurl = "/"  
+baseurl = "http://www.fa49blog.com/"  
 title = "FA49 Proponent Office Blog"
 copyright = "&copy; 2017 FA49 Proponent Office"
 theme = "hugo-academic"
